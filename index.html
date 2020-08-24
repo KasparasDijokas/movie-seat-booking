@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie seat booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <div class="title">
+        <p>Pick a movie:</p>
+        <select id="options">
+            <option value="10">Avengers: Endgame ($10)</option>
+            <option value="12">Joker ($12)</option>
+            <option value="8">Toy story 4 ($8)</option>
+            <option value="9">The lion king ($9)</option>
+        </select>
+    </div>
+    <div id="legend">
+        <ul class="showcase">
+            <li>
+                <div class="seat na"></div>
+                <span>N/A</span>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <span>Selected</span>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <span>Occupied</span>
+            </li>
+        </ul>
+    </div>
+    <div id="cinema">
+        <div class="screen"></div>
+        <div class="seats">
+            <div id="seats-l"></div>
+            <div id="seats-m"></div>
+            <div id="seats-r"></div>
+        </div>
+    </div>
+    <p id="total">You have selected 0 seats for a price of $0</p>
+</div>
+</body>
+</html>
